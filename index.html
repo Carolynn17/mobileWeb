@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+        <link rel="stylesheet" href="css/themes/Mytheme.css" />
+        <link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
+    <title>Mobile Web Development</title>
+
+  </head>
+<body>
+    <div data-role="page" id="page1" data-theme="D">
+        <div data-role="header">
+            <h2>Favorite Pictures</h2>
+        </div>
+        <div data-role="main" class="ui-content">
+            
+
+          <a href="#page2" data-transition="flip"> <input type="button" value="Page 2"></a>
+   
+        <div class="menu-div">
+            <ul>
+                <li><a href="#"><i class="fa fa-home"> </i> <span>Home</span></a></li>
+                <li><a href="#"><i class="fa fa-user"></i> <span>Profile</span></a></li>
+                <li><a href="#"><i class="fa fa-server"> </i> <span>Services</span></a></li>
+                <li><a href="#"><i class="fa fa-rss"> </i> <span>Blog</span></a></li>
+                <li><a href="#"><i class="fa fa-phone-square"> </i> <span>Contact Us</span></a></li>
+                <li><a href="#"><i class="fa fa-info-circle"> </i> <span>Help</span></a></li>
+        
+                <a href="#" class="arrow"><i class="fa fa-chevron-circle-right"></i></a>
+                <a href="#" class="a2"><i class="fa fa-chevron-circle-left"></i></a>
+            </ul>
+        </div>
+        </div>
+       
+<div data-role="footer">
+    <h1>@copyrights carolineapio1@gmail.com</h1>
+</div>
+
+    <div data-role="page" id="page2"  data-theme="D">
+        <div data-role="header">
+            <h2>Your Photo Album</h2>
+        </div>
+        <div data-role="main" class="ui-content">
+            <h2>So grateful Your here</h2>
+            <p>Your Welcome To page 2</p>
+                <a href="#page1" data-transition="flip"> Page 1</a>
+        </div>
+        <div data-role="footer">
+            <h1>@copyrights carolineapio1@gmail.com</h1>
+        </div>
+    </div>
+    </div>
+<script type="text/javascript">
+    $(".arrow").click(function ()
+    {
+        $(".menu-div").css('width','90px')
+        $(".a2").css('display', 'block')
+        $(".arrow").css('display', 'none')
+        $("span").css('display', 'none')
+       
+    })
+
+     $(".a2").click(function ()
+    {
+        $(".menu-div").css('width','300px')
+        $(".arrow").css('display', 'block')
+        $(".a2").css('display', 'none')
+        $("span").css('display', 'inline-block')
+       
+    })
+</script>
+</body>
+</html>

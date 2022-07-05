@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery Mobile</title>
+    <link rel="stylesheet" type="text/css" href="css/mobile.css" />
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+      <div data-role="page" id="page1">
+        <div data-role="header"><h1>Favorite Pictures</h1></div>
+        
+      
+        <div data-role="main" class="ui-content"><h2>Your Welcome to page 1</h2><p>Iam a front end developer</p><a href="#page2"  data-transition="flip" ><input type="button" value="Go to page 2"></a></div>
+        <div data-role="footer"> <p>@copyrights All rights reserved</p>
+        </div>
+      </div>
+     </div>
+
+     <div data-role="page" id="page2">
+        <div data-role="header">
+            <h1>Welcome To My Homepage</h1>
+        </div>
+        <div data-role="main" class="ui-content">
+            <p>I Am Now A Mobile Developer!!</p>
+            <a href="#page1" data-transition="flip" data-rel="dialog"><input type="button" transition="flip" value="Go to page 1"></a>
+        </div>
+        <div data-role="footer">
+            <h1>Footer Text</h1>
+        </div>
+     </div>
+    </div>
+ </body>
+</html>
